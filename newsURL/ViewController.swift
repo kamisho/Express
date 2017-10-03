@@ -5,7 +5,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     
     @IBOutlet var taskTableView: UITableView!
     
-    var selectedIndex = 0
+    
+    var selectedIndex = -1
     var tasks:[Task] = []
     var saveDates : [Date] = []
     var tasksToShow:[String:[String]] = ["投稿記事":[]]
@@ -47,7 +48,6 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         taskTableView.delegate = self
     }
     
-    
+    // コアデータ(作成と削除)
     func getData() {
         
         // データ保存時と同様にcontextを定義
@@ -122,6 +122,23 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         // taskTableViewを再読み込みする
         taskTableView.reloadData()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "showDetail") as! UraListViewController
+        
+        // メンバ変数に行番号を保存
+        selectedIndex = indexPath.row
+        nextVC.sIndex = selectedIndex
+        
+        
+        print(String(selectedIndex) + "が選択されました")
+        
+        self.navigationController?.pushViewController(nextVC, animated: true)
+        
+        performSegue(withIdentifier: "showDetail", sender: nil)
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
