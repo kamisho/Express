@@ -1,0 +1,18 @@
+PODS:
+  - Kanna (2.1.1)
+  - MisterFusion (3.0.0)
+  - URLEmbeddedView (0.10.0):
+    - Kanna (~> 2.1.1)
+
+DEPENDENCIES:
+  - MisterFusion
+  - URLEmbeddedView
+
+SPEC CHECKSUMS:
+  Kanna: 9b4b086c218703f2b94f5b21a466217dd2f9332e
+  MisterFusion: fd53e97f219514fcab8bb82985fb1aefade337da
+  URLEmbeddedView: 0424a1f068a75574b8d5431b0add4478af5c83cb
+
+PODFILE CHECKSUM: ec5d5f90238295374cadc65dbc79486cb4c781cf
+
+COCOAPODS: 1.2.1
