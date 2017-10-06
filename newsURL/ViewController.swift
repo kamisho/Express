@@ -6,7 +6,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     @IBOutlet var taskTableView: UITableView!
     
     
-    var selectedIndex = -1
+    var txt1 : String?
+    var selectedIndex = 0
     var tasks:[Task] = []
     var saveDates : [Date] = []
     var tasksToShow:[String:[String]] = ["投稿記事":[]]
@@ -123,6 +124,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         taskTableView.reloadData()
     }
     
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "showDetail") as! UraListViewController
         
@@ -130,14 +133,40 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         selectedIndex = indexPath.row
         nextVC.sIndex = selectedIndex
         
-        
         print(String(selectedIndex) + "が選択されました")
         
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        txt1 = "こんにちは"
+        
+    self.navigationController?.pushViewController(nextVC, animated: true)
         
         performSegue(withIdentifier: "showDetail", sender: nil)
+    }
+    
+    
+    
+    
+    // if コメントアウト UraListに受け渡し不可
+    // if コメントアウト解除 新規追加不可
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+   
+        
+        func tapidou(_ sender: UIButton) {
+            performSegue(withIdentifier: "seguetest",sender: nil)
+        }
+        
+        
+        // 次の画面をインスタンス化(as:ダウンキャスト型変換)
+        var dvc = segue.destination as! UraListViewController
+        
+        // 次の画面のプロパティに選択された行番号を指定
+        dvc.sIndex = selectedIndex
+      
+        
         
     }
+
     
     
     override func didReceiveMemoryWarning() {

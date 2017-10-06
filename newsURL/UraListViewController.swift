@@ -12,12 +12,16 @@ import MisterFusion
 import CoreData
 
 class UraListViewController: UIViewController {
-
-    // override func prepare から引き継いでいる
-    var txt1 : String?
-    var txt2 : String?
-    var txt3 : String?
-
+    
+    var tasks:[Task] = []
+    var tasksToShow:[String:[String]] = ["投稿した記事":[]]
+    var taskCategories:[String] = ["投稿した記事"]
+    
+    var text1:[String] = []
+    var text2:[String] = []
+    var text3:[String] = []
+    
+    
     let myApp = UIApplication.shared.delegate as! AppDelegate
     var sIndex = -1
     var saveDate : Date = Date()
@@ -36,19 +40,12 @@ class UraListViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "urlTobu:")
         myOG.addGestureRecognizer(tapGestureRecognizer)
         myOG.isUserInteractionEnabled = true
-        
-        // テキスト配置
-        myLabel.font = UIFont(name: "HiraMinProN-W3", size: 20)
-        myLabel.text = txt2
-        
-        // 記事配置
-        myArticle.font = UIFont(name: "HiraMinProN-W3", size: 15)
-        myArticle.text = txt3
+       
         
         // OGカード配置
         myOG.addLayoutSubview(embeddedView , andConstraints : embeddedView.top |+| 8 , embeddedView.right |-| 12 , embeddedView.left |+| 12 , embeddedView.bottom |-| 7.5)
         
-//        embeddedView.loadURL(txt1!)
+        getData()
         
     }
     
@@ -57,8 +54,56 @@ class UraListViewController: UIViewController {
         if let url = NSURL(string: myApp.newsURL){
             UIApplication.shared.openURL(url as URL)
         }
-
+    }
+    
+    
+    
+    func getData() {
         
+        // データ保存時と同様にcontextを定義
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let appDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let viewContext = appDelegate.persistentContainer.viewContext
+        
+        let query : NSFetchRequest<Task> = Task.fetchRequest()
+        
+        //        let namePredicte = NSPredicate(format: "saveDate = %@", saveDate as CVarArg)
+        //        query.predicate = namePredicte
+        
+        
+        do {
+            
+            tasks = try context.fetch(query)
+            
+            // tasksToShow配列を空にする。（同じデータを複数表示しないため）
+            for key in tasksToShow.keys {
+                tasksToShow[key] = []
+            }
+            // 先ほどfetchしたデータをtasksToShow配列に格納する
+            
+            print(tasks)
+            
+            for task in tasks {
+                //                tasksToShow["投稿した記事"]?.append(task.name!)
+                
+                text1.append(task.name!)
+                text2.append(task.article!)
+                text3.append(task.url!)
+            }
+            
+            var num1 = text1.count - sIndex - 1
+            myLabel.text = text1[num1]
+            
+            myArticle.text = text2[num1]
+            
+            var num3 = text3.count - sIndex - 1
+            embeddedView.loadURL(text3[num1])
+                    
+        } catch {
+            print("Fetching Failed.")
+        }
     }
    
     
