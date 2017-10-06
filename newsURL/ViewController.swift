@@ -5,7 +5,6 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     
     @IBOutlet var taskTableView: UITableView!
     
-    
     var txt1 : String?
     var selectedIndex = 0
     var tasks:[Task] = []
@@ -135,9 +134,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         print(String(selectedIndex) + "が選択されました")
         
-        txt1 = "こんにちは"
-        
-    self.navigationController?.pushViewController(nextVC, animated: true)
+        self.navigationController?.pushViewController(nextVC, animated: true)
         
         performSegue(withIdentifier: "showDetail", sender: nil)
     }
@@ -150,20 +147,17 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-   
-        
-        func tapidou(_ sender: UIButton) {
-            performSegue(withIdentifier: "seguetest",sender: nil)
-        }
-        
-        
         // 次の画面をインスタンス化(as:ダウンキャスト型変換)
+        
+        if segue.identifier == "showDetail"{
+        
         var dvc = segue.destination as! UraListViewController
         
         // 次の画面のプロパティに選択された行番号を指定
         dvc.sIndex = selectedIndex
-      
-        
+
+            
+        }
         
     }
 

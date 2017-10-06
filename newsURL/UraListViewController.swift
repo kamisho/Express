@@ -37,6 +37,9 @@ class UraListViewController: UIViewController {
 
         makeKeybord()
         
+        myLabel.font = UIFont(name: "HiraMinProN-W3", size: 20)
+        myArticle.font = UIFont(name: "HiraMinProN-W3", size: 15)
+        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "urlTobu:")
         myOG.addGestureRecognizer(tapGestureRecognizer)
         myOG.isUserInteractionEnabled = true
@@ -98,9 +101,10 @@ class UraListViewController: UIViewController {
             
             myArticle.text = text2[num1]
             
-            var num3 = text3.count - sIndex - 1
+            // myOGに代入必要
             embeddedView.loadURL(text3[num1])
-                    
+
+            
         } catch {
             print("Fetching Failed.")
         }

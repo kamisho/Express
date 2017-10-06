@@ -91,8 +91,7 @@
                                             <color key="titleShadowColor" red="0.97573790560991225" green="1" blue="0.9235858978179261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tapidou:" destination="qob-Ec-0i0" eventType="touchUpInside" id="Jsb-ve-EkO"/>
-                                            <segue destination="3be-wr-wLD" kind="show" identifier="seguetest" id="Nn1-jJ-vma"/>
+                                            <segue destination="3be-wr-wLD" kind="show" id="jS1-hh-56B"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you think?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-f5-oG2">
@@ -231,17 +230,11 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="905" y="-556"/>
+            <point key="canvasLocation" x="905" y="-503"/>
         </scene>
         <!--Ura List View Controller-->
         <scene sceneID="Fsn-S2-Rwo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="joy-vh-FeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="pld-qY-16j">
-                    <connections>
-                        <action selector="urlTobu:" destination="p3a-5S-qxB" id="nYF-TH-frt"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController storyboardIdentifier="showDetail" id="p3a-5S-qxB" customClass="UraListViewController" customModule="newsURL" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4rc-RR-pEf"/>
@@ -277,7 +270,7 @@
                                     <constraint firstAttribute="height" constant="100" id="B6o-p4-EhT"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="pld-qY-16j" appends="YES" id="TFb-aJ-HeO"/>
+                                    <outletCollection property="gestureRecognizers" destination="VnM-BJ-3Ck" appends="YES" id="Jib-mQ-CWL"/>
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwg-ws-89l">
@@ -324,8 +317,14 @@
                         <outlet property="myOG" destination="UZE-mJ-GcV" id="5GP-ki-eSD"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joy-vh-FeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VnM-BJ-3Ck">
+                    <connections>
+                        <action selector="urlTobu:" destination="p3a-5S-qxB" id="qWd-ff-xfD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="17" y="-556"/>
+            <point key="canvasLocation" x="17" y="-503"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="ebY-GH-b7u">
@@ -438,7 +437,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3Y-Pp-SOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="-1343"/>
+            <point key="canvasLocation" x="905" y="-1343"/>
         </scene>
     </scenes>
     <resources>
