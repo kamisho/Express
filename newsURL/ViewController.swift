@@ -4,6 +4,8 @@ import CoreData
 class ViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet var taskTableView: UITableView!
+    @IBOutlet var appSubtitle: UILabel!
+    
     
     var txt1 : String?
     var selectedIndex = 0
@@ -11,7 +13,6 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     var saveDates : [Date] = []
     var tasksToShow:[String:[String]] = ["投稿記事":[]]
     var taskCategories:[String] = ["投稿記事"]
-
     
     // taskCategories[]に格納されている文字列がTableViewのセクションになる
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,6 +46,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         // を再読み込みする
         taskTableView.reloadData()
+        
+        appSubtitle.font = UIFont(name: "HiraMinProN-W3", size: 20)
         
     }
     

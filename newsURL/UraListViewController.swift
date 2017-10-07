@@ -21,7 +21,6 @@ class UraListViewController: UIViewController {
     var text2:[String] = []
     var text3:[String] = []
     
-    
     let myApp = UIApplication.shared.delegate as! AppDelegate
     var sIndex = -1
     var saveDate : Date = Date()
@@ -31,7 +30,8 @@ class UraListViewController: UIViewController {
     @IBOutlet var myArticle: UITextView!
     @IBOutlet var myOG: UIView!
     
-
+    var num3 : Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +44,6 @@ class UraListViewController: UIViewController {
         myOG.addGestureRecognizer(tapGestureRecognizer)
         myOG.isUserInteractionEnabled = true
        
-        
         // OGカード配置
         myOG.addLayoutSubview(embeddedView , andConstraints : embeddedView.top |+| 8 , embeddedView.right |-| 12 , embeddedView.left |+| 12 , embeddedView.bottom |-| 7.5)
         
@@ -55,10 +54,10 @@ class UraListViewController: UIViewController {
     
     @IBAction func urlTobu(_ sender: UITapGestureRecognizer) {
         
-        
         // safariに移動させるためにはstring: 以降に保存されたurlの変数？をだに入試なければならない
         // string: 以降にURLを直接書き込むとそのURLリンクに飛ぶ
-        if let url = NSURL(string: myApp.newsURL){
+        if let url = NSURL(string: text3[num3!]){
+            print("タップされた")
             UIApplication.shared.openURL(url as URL)
         }
     }
@@ -108,9 +107,9 @@ class UraListViewController: UIViewController {
             
             // embeddedView.loadURL()はあっている - 問題は()の中身
             // url自体が保存されているかも不安
-            let num3 = text3.count - sIndex - 1
-            embeddedView.loadURL(text3[num3])
-            print(embeddedView.loadURL(text3[num3]))
+            num3 = text3.count - sIndex - 1
+            embeddedView.loadURL(text3[num3!])
+            print(embeddedView.loadURL(text3[num3!]))
 
             
         } catch {
