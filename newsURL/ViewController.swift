@@ -11,7 +11,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     var saveDates : [Date] = []
     var tasksToShow:[String:[String]] = ["投稿記事":[]]
     var taskCategories:[String] = ["投稿記事"]
-    
+
     
     // taskCategories[]に格納されている文字列がTableViewのセクションになる
     func numberOfSections(in tableView: UITableView) -> Int {

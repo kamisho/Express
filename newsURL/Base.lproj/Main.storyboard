@@ -53,19 +53,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwU-VE-xT6">
-                                                    <rect key="frame" x="8" y="23" width="201" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="201" id="tDi-UV-Ams"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="fwU-VE-xT6" firstAttribute="top" secondItem="js5-vg-2vd" secondAttribute="bottom" constant="8" symbolic="YES" id="0De-CB-gYy"/>
-                                                <constraint firstItem="js5-vg-2vd" firstAttribute="leading" secondItem="fwU-VE-xT6" secondAttribute="leading" id="IAU-nZ-H8R"/>
                                                 <constraint firstItem="js5-vg-2vd" firstAttribute="top" secondItem="5Gu-CK-ccx" secondAttribute="top" id="jRJ-oU-z7O"/>
                                                 <constraint firstItem="js5-vg-2vd" firstAttribute="leading" secondItem="5Gu-CK-ccx" secondAttribute="leadingMargin" id="qed-zW-LEL"/>
                                             </constraints>
@@ -142,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bww-ej-cf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-327" y="-1847"/>
+            <point key="canvasLocation" x="-327.19999999999999" y="-1847.2263868065968"/>
         </scene>
         <!--Save View Controller-->
         <scene sceneID="cUR-nF-fEV">
@@ -445,6 +434,6 @@
         <image name="pen.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3QP-6D-w7m"/>
+        <segue reference="tu1-pp-wgQ"/>
     </inferredMetricsTieBreakers>
 </document>

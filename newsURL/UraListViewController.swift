@@ -55,9 +55,10 @@ class UraListViewController: UIViewController {
     
     @IBAction func urlTobu(_ sender: UITapGestureRecognizer) {
         
+        
         // safariに移動させるためにはstring: 以降に保存されたurlの変数？をだに入試なければならない
         // string: 以降にURLを直接書き込むとそのURLリンクに飛ぶ
-        if let url = NSURL(string: "http://nexseed.net/"){
+        if let url = NSURL(string: myApp.newsURL){
             UIApplication.shared.openURL(url as URL)
         }
     }
