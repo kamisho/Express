@@ -142,12 +142,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bww-ej-cf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="-1343"/>
+            <point key="canvasLocation" x="-327" y="-1847"/>
         </scene>
         <!--Save View Controller-->
         <scene sceneID="cUR-nF-fEV">
             <objects>
-                <viewController id="DHD-Hw-Wyh" customClass="SaveViewController" customModule="newsURL" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ido" id="DHD-Hw-Wyh" customClass="SaveViewController" customModule="newsURL" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vQx-Au-1f7"/>
                         <viewControllerLayoutGuide type="bottom" id="o9s-lI-iiX"/>
@@ -187,7 +187,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJc-kR-mYw">
                                 <rect key="frame" x="55" y="565" width="265" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.93591099564880498" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.90102559537343518" blue="0.015420014614330069" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="5jM-Pe-4mt"/>
                                 </constraints>
@@ -230,7 +230,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="905" y="-503"/>
+            <point key="canvasLocation" x="900" y="-899"/>
         </scene>
         <!--Ura List View Controller-->
         <scene sceneID="Fsn-S2-Rwo">
@@ -275,7 +275,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwg-ws-89l">
                                 <rect key="frame" x="55" y="565" width="265" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.95666110710516272" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.86229833981188042" blue="0.013477055336097443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="65F-dK-n63"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="gQw-Zv-YWF"/>
@@ -324,7 +324,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="17" y="-503"/>
+            <point key="canvasLocation" x="-327" y="-899"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="ebY-GH-b7u">
@@ -391,7 +391,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS8-UY-XoY">
                                 <rect key="frame" x="55" y="378" width="265" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.96954255705544834" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.89828631217733079" blue="0.021393891156090583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="ysq-EL-Hh2"/>
                                 </constraints>
@@ -399,7 +399,7 @@
                                 <state key="normal" title="投稿する"/>
                                 <connections>
                                     <action selector="plusBtn:" destination="3be-wr-wLD" eventType="touchUpInside" id="bNZ-rY-1AS"/>
-                                    <segue destination="DHD-Hw-Wyh" kind="show" id="EGg-EV-Wcs"/>
+                                    <segue destination="DHD-Hw-Wyh" kind="show" identifier="" id="EGg-EV-Wcs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -437,7 +437,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3Y-Pp-SOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="-1343"/>
+            <point key="canvasLocation" x="900" y="-1847"/>
         </scene>
     </scenes>
     <resources>
@@ -445,6 +445,6 @@
         <image name="pen.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tu1-pp-wgQ"/>
+        <segue reference="3QP-6D-w7m"/>
     </inferredMetricsTieBreakers>
 </document>

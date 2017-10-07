@@ -12,6 +12,7 @@
 		920C93DE1F7D0A0800488D7D /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C93DC1F7D0A0800488D7D /* Task+CoreDataClass.swift */; };
 		920C93DF1F7D0A0800488D7D /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C93DD1F7D0A0800488D7D /* Task+CoreDataProperties.swift */; };
 		929637401F83E4C600B531A5 /* UraListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296373F1F83E4C600B531A5 /* UraListViewController.swift */; };
+		92AA944D1F88A1E3009C2F5A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AA944C1F88A1E3009C2F5A /* JavaScriptCore.framework */; };
 		92B266331F76DBE400F6DBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B266321F76DBE400F6DBC4 /* AppDelegate.swift */; };
 		92B266351F76DBE400F6DBC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B266341F76DBE400F6DBC4 /* ViewController.swift */; };
 		92B266381F76DBE400F6DBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B266361F76DBE400F6DBC4 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		920C93DC1F7D0A0800488D7D /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataClass.swift"; path = "../Task+CoreDataClass.swift"; sourceTree = "<group>"; };
 		920C93DD1F7D0A0800488D7D /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataProperties.swift"; path = "../Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9296373F1F83E4C600B531A5 /* UraListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UraListViewController.swift; sourceTree = "<group>"; };
+		92AA944C1F88A1E3009C2F5A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		92B2662F1F76DBE400F6DBC4 /* newsURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B266321F76DBE400F6DBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B266341F76DBE400F6DBC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AA944D1F88A1E3009C2F5A /* JavaScriptCore.framework in Frameworks */,
 				92D27B561F82AD6100CEF3EC /* MisterFusion.framework in Frameworks */,
 				92D27B541F82ACEC00CEF3EC /* URLEmbeddedView.framework in Frameworks */,
 				B5F789DE15BEB32DCB78DB2B /* Pods_newsURL.framework in Frameworks */,
@@ -181,6 +184,7 @@
 		A18E4A1DBAEB69FE1012BADE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92AA944C1F88A1E3009C2F5A /* JavaScriptCore.framework */,
 				92D27B551F82AD6100CEF3EC /* MisterFusion.framework */,
 				92D27B531F82ACEC00CEF3EC /* URLEmbeddedView.framework */,
 				8104C67F63F1FD75352E7490 /* Pods_newsURL.framework */,

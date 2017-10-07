@@ -32,63 +32,6 @@ class DetailViewController: UIViewController {
     
     @IBAction func plusBtn(_ sender: UIButton) {
         
-        // アラート表示
-        // TextFieldに何も入力されていない場合は何もせずに1つ目のビューへ戻ります。
-        let urlName = urlTextField.text
-        
-        if urlName == "" {
-            dismiss(animated: true, completion: nil)
-            
-            let alertController = UIAlertController(title: "URLを入力してください", message: "" , preferredStyle: .alert)
-            
-            // アラートにOKボタンを追加
-            // handler : OKボタンが押された時に行いたい処理を指定する場所
-            alertController.addAction(UIAlertAction(title: "OK" , style: .default, handler:nil))
-            
-            // アラートを表示する
-            present(alertController , animated: true , completion : nil)
-            
-            return
-            
-        }
-        
-        let titleName = titleTextField.text
-        if titleName == "" {
-            dismiss(animated: true, completion: nil)
-            
-            let alertController = UIAlertController(title: "タイトルを入力してください", message: "" , preferredStyle: .alert)
-            
-            
-            // アラートにOKボタンを追加
-            // handler : OKボタンが押された時に行いたい処理を指定する場所
-            alertController.addAction(UIAlertAction(title: "OK" , style: .default, handler:nil))
-            
-            
-            // アラートを表示する
-            present(alertController , animated: true , completion : nil)
-            
-            return
-            
-        }
-
-
-        let articleName = myTextView.text
-        if articleName == "" {
-            dismiss(animated: true, completion: nil)
-            
-            let alertController = UIAlertController(title: "記事を入力してください", message: "" , preferredStyle: .alert)
-            
-            // アラートにOKボタンを追加
-            // handler : OKボタンが押された時に行いたい処理を指定する場所
-            alertController.addAction(UIAlertAction(title: "OK" , style: .default, handler:nil))
-            
-            
-            // アラートを表示する
-            present(alertController , animated: true , completion : nil)
-            
-            return
-            
-        }
         
         // context(データベースを扱うのに必要)を定義。
         let viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -112,7 +55,6 @@ class DetailViewController: UIViewController {
         
         //        dismiss(animated: true, completion: nil)
 
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -120,9 +62,9 @@ class DetailViewController: UIViewController {
         SaveViewController.txt1 = urlTextField.text
         SaveViewController.txt2 = titleTextField.text
         SaveViewController.txt3 = myTextView.text
-        
     }
-    
+
+
     @IBAction func cancelBtn(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
