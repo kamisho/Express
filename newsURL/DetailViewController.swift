@@ -105,7 +105,7 @@ class DetailViewController: UIViewController {
         newRecord.setValue(titleTextField.text, forKey: "name")
         newRecord.setValue(myTextView.text, forKey: "article")
         newRecord.setValue(Date(), forKey: "saveDate")
-        newRecord.setValue(myApp.newsURL, forKey: "url")
+        newRecord.setValue(urlTextField.text , forKey: "url")
         
         // 上で作成したデータをデータベースに保存します。
         (UIApplication.shared.delegate as! AppDelegate).saveContext()

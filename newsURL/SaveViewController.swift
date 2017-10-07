@@ -23,7 +23,7 @@ class SaveViewController: UIViewController {
         // キーボードを閉じる関数
         makeKeybord()
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "urlTobu:")
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SaveViewController.urlTobu(_:)))
         myOG.addGestureRecognizer(tapGestureRecognizer)
         myOG.isUserInteractionEnabled = true
 

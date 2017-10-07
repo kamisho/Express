@@ -40,7 +40,7 @@ class UraListViewController: UIViewController {
         myLabel.font = UIFont(name: "HiraMinProN-W3", size: 20)
         myArticle.font = UIFont(name: "HiraMinProN-W3", size: 15)
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "urlTobu:")
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UraListViewController.urlTobu(_:)))
         myOG.addGestureRecognizer(tapGestureRecognizer)
         myOG.isUserInteractionEnabled = true
        
@@ -60,7 +60,6 @@ class UraListViewController: UIViewController {
     }
     
     
-    
     func getData() {
         
         // データ保存時と同様にcontextを定義
@@ -68,7 +67,7 @@ class UraListViewController: UIViewController {
         
         let appDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        let viewContext = appDelegate.persistentContainer.viewContext
+        _ = appDelegate.persistentContainer.viewContext
         
         let query : NSFetchRequest<Task> = Task.fetchRequest()
         
@@ -96,13 +95,17 @@ class UraListViewController: UIViewController {
                 text3.append(task.url!)
             }
             
-            var num1 = text1.count - sIndex - 1
+            let num1 = text1.count - sIndex - 1
             myLabel.text = text1[num1]
             
-            myArticle.text = text2[num1]
+            let num2 = text2.count - sIndex - 1
+            myArticle.text = text2[num2]
             
-            // myOGに代入必要
-            embeddedView.loadURL(text3[num1])
+            // embeddedView.loadURL()はあっている - 問題は()の中身
+            // url自体が保存されているかも不安
+            let num3 = text3.count - sIndex - 1
+            embeddedView.loadURL(text3[num3])
+            print(embeddedView.loadURL(text3[num3]))
 
             
         } catch {
@@ -133,7 +136,7 @@ class UraListViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

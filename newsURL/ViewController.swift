@@ -53,6 +53,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         taskTableView.dataSource = self
         taskTableView.delegate = self
+        
     }
     
     // コアデータ(作成と削除)
@@ -63,7 +64,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         let appDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        let viewContext = appDelegate.persistentContainer.viewContext
+        _ = appDelegate.persistentContainer.viewContext
         
         //        let query : NSFetchRequest<Task> = Task.fetchRequest()
         
@@ -151,7 +152,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         if segue.identifier == "showDetail"{
         
-        var dvc = segue.destination as! UraListViewController
+        let dvc = segue.destination as! UraListViewController
         
         // 次の画面のプロパティに選択された行番号を指定
         dvc.sIndex = selectedIndex
