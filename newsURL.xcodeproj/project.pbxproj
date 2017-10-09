@@ -11,8 +11,8 @@
 		4BFD3DDEBC56CEA29BD14C6E /* Pods_newsURLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939AF1E1B68CEFF080167A3A /* Pods_newsURLUITests.framework */; };
 		920C93DE1F7D0A0800488D7D /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C93DC1F7D0A0800488D7D /* Task+CoreDataClass.swift */; };
 		920C93DF1F7D0A0800488D7D /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C93DD1F7D0A0800488D7D /* Task+CoreDataProperties.swift */; };
+		92345B711F8B7709001E8390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92345B701F8B7709001E8390 /* GoogleService-Info.plist */; };
 		929637401F83E4C600B531A5 /* UraListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296373F1F83E4C600B531A5 /* UraListViewController.swift */; };
-		92AA944D1F88A1E3009C2F5A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AA944C1F88A1E3009C2F5A /* JavaScriptCore.framework */; };
 		92B266331F76DBE400F6DBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B266321F76DBE400F6DBC4 /* AppDelegate.swift */; };
 		92B266351F76DBE400F6DBC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B266341F76DBE400F6DBC4 /* ViewController.swift */; };
 		92B266381F76DBE400F6DBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B266361F76DBE400F6DBC4 /* Main.storyboard */; };
@@ -24,7 +24,6 @@
 		92B266681F76FE3B00F6DBC4 /* book.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92B266671F76FE3B00F6DBC4 /* book.jpg */; };
 		92B2666C1F7703A600F6DBC4 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 92B2666B1F7703A600F6DBC4 /* pen.png */; };
 		92B266721F7791DF00F6DBC4 /* stop_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92B266711F7791DF00F6DBC4 /* stop_icon.png */; };
-		92B266741F77E53100F6DBC4 /* abc.png in Resources */ = {isa = PBXBuildFile; fileRef = 92B266731F77E53100F6DBC4 /* abc.png */; };
 		92D216141F78A194003883FB /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D216131F78A194003883FB /* SaveViewController.swift */; };
 		92D216161F78BE30003883FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D216151F78BE30003883FB /* DetailViewController.swift */; };
 		92D27B541F82ACEC00CEF3EC /* URLEmbeddedView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D27B531F82ACEC00CEF3EC /* URLEmbeddedView.framework */; };
@@ -55,6 +54,7 @@
 		8104C67F63F1FD75352E7490 /* Pods_newsURL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsURL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		920C93DC1F7D0A0800488D7D /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataClass.swift"; path = "../Task+CoreDataClass.swift"; sourceTree = "<group>"; };
 		920C93DD1F7D0A0800488D7D /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataProperties.swift"; path = "../Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		92345B701F8B7709001E8390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9296373F1F83E4C600B531A5 /* UraListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UraListViewController.swift; sourceTree = "<group>"; };
 		92AA944C1F88A1E3009C2F5A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		92B2662F1F76DBE400F6DBC4 /* newsURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +74,6 @@
 		92B266671F76FE3B00F6DBC4 /* book.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book.jpg; sourceTree = "<group>"; };
 		92B2666B1F7703A600F6DBC4 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
 		92B266711F7791DF00F6DBC4 /* stop_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop_icon.png; sourceTree = "<group>"; };
-		92B266731F77E53100F6DBC4 /* abc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abc.png; sourceTree = "<group>"; };
 		92D216131F78A194003883FB /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		92D216151F78BE30003883FB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		92D27B531F82ACEC00CEF3EC /* URLEmbeddedView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = URLEmbeddedView.framework; path = "../../../../Library/Developer/Xcode/DerivedData/newsURL-fotvscmoozxkbnfgngxahalrgbif/Build/Products/Debug-iphonesimulator/URLEmbeddedView/URLEmbeddedView.framework"; sourceTree = "<group>"; };
@@ -92,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92AA944D1F88A1E3009C2F5A /* JavaScriptCore.framework in Frameworks */,
 				92D27B561F82AD6100CEF3EC /* MisterFusion.framework in Frameworks */,
 				92D27B541F82ACEC00CEF3EC /* URLEmbeddedView.framework in Frameworks */,
 				B5F789DE15BEB32DCB78DB2B /* Pods_newsURL.framework in Frameworks */,
@@ -145,7 +143,6 @@
 			children = (
 				920C93DC1F7D0A0800488D7D /* Task+CoreDataClass.swift */,
 				920C93DD1F7D0A0800488D7D /* Task+CoreDataProperties.swift */,
-				92B266731F77E53100F6DBC4 /* abc.png */,
 				92B2666B1F7703A600F6DBC4 /* pen.png */,
 				92B266711F7791DF00F6DBC4 /* stop_icon.png */,
 				92B266671F76FE3B00F6DBC4 /* book.jpg */,
@@ -158,6 +155,7 @@
 				92B2663C1F76DBE400F6DBC4 /* Assets.xcassets */,
 				92B2663E1F76DBE400F6DBC4 /* LaunchScreen.storyboard */,
 				92B266411F76DBE400F6DBC4 /* Info.plist */,
+				92345B701F8B7709001E8390 /* GoogleService-Info.plist */,
 				92B266391F76DBE400F6DBC4 /* newsURL.xcdatamodeld */,
 			);
 			path = newsURL;
@@ -284,8 +282,8 @@
 				TargetAttributes = {
 					92B2662E1F76DBE400F6DBC4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 83H7253FJH;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 4KBU5232V3;
+						ProvisioningStyle = Manual;
 					};
 					92B266451F76DBE400F6DBC4 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -330,9 +328,9 @@
 				92B2666C1F7703A600F6DBC4 /* pen.png in Resources */,
 				92B266721F7791DF00F6DBC4 /* stop_icon.png in Resources */,
 				92B2663D1F76DBE400F6DBC4 /* Assets.xcassets in Resources */,
-				92B266741F77E53100F6DBC4 /* abc.png in Resources */,
 				92B266681F76FE3B00F6DBC4 /* book.jpg in Resources */,
 				92B266381F76DBE400F6DBC4 /* Main.storyboard in Resources */,
+				92345B711F8B7709001E8390 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,9 +577,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: kamisho0528.message@gmail.com (7FBXH6V52E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YW22YRTVFS;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -601,6 +601,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -630,9 +631,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos10.3]" = "iPhone Developer: kamisho0528.message@gmail.com (7FBXH6V52E)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YW22YRTVFS;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -645,6 +648,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,15 +661,21 @@
 			baseConfigurationReference = 99A6334E6F0078E2655A77E7 /* Pods-newsURL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 83H7253FJH;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 4KBU5232V3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MisterFusion",
 				);
 				INFOPLIST_FILE = newsURL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.message.newsURL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.express;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f1ad551d-7cd5-497d-90b4-945d015a7817";
+				PROVISIONING_PROFILE_SPECIFIER = Express;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -675,15 +685,20 @@
 			baseConfigurationReference = F0BBA093896EDBB99F3F0594 /* Pods-newsURL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 83H7253FJH;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 4KBU5232V3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MisterFusion",
 				);
 				INFOPLIST_FILE = newsURL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.message.newsURL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.express;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f1ad551d-7cd5-497d-90b4-945d015a7817";
+				PROVISIONING_PROFILE_SPECIFIER = Express;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -694,11 +709,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YW22YRTVFS;
 				INFOPLIST_FILE = newsURLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.message.newsURLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/newsURL.app/newsURL";
 			};
@@ -710,11 +727,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YW22YRTVFS;
 				INFOPLIST_FILE = newsURLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.message.newsURLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/newsURL.app/newsURL";
 			};
@@ -725,11 +744,13 @@
 			baseConfigurationReference = 19462EE1058565229DDBEDA2 /* Pods-newsURLUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = YW22YRTVFS;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = newsURLUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.message.newsURLUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = newsURL;
 			};
@@ -740,11 +761,13 @@
 			baseConfigurationReference = EC793CE55524E1C3A519A59C /* Pods-newsURLUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = YW22YRTVFS;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = newsURLUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.message.newsURLUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = newsURL;
 			};

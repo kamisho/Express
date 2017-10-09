@@ -8,6 +8,7 @@ target 'newsURL' do
     pod "URLEmbeddedView"
     pod 'MisterFusion'
   # Pods for newsURL
+    pod 'Firebase/Core'
 
   target 'newsURLTests' do
     inherit! :search_paths

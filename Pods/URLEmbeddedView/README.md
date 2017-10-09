@@ -2,6 +2,7 @@
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/URLEmbeddedView.svg?style=flat)](http://cocoapods.org/pods/URLEmbeddedView)
 [![License](https://img.shields.io/cocoapods/l/URLEmbeddedView.svg?style=flat)](http://cocoapods.org/pods/URLEmbeddedView)
 
@@ -17,9 +18,9 @@
 - [x] Tap handleable
 - [x] Clearable image cache
 - [x] Clearable data cache
-- [x] Support Swift2.3
-- [x] Support Swift3
-- [ ] Configurable expire date for cache
+- [x] Support Swift3.2 (until 0.11.x)
+- [x] Support Swift4
+- [x] Support Carthage since 0.11.1
 
 ## Usage
 
@@ -94,6 +95,8 @@ OGImageProvider.shared.clearAllCache()
 
 ## Installation
 
+#### CocoaPods
+
 URLEmbeddedView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -108,6 +111,15 @@ target 'Your Project Name' do
   # Pods for URLEmbeddedViewSample
   pod "URLEmbeddedView"
 end
+```
+
+#### Carthage
+
+If you’re using [Carthage](https://github.com/Carthage/Carthage), simply add
+NoticeObserveKit to your `Cartfile`:
+
+```ruby
+github "marty-suzuki/URLEmbeddedView"
 ```
 
 ## Use in Objective-C
@@ -131,14 +143,12 @@ end
 
 ## Special Thanks
 
-- [Kanna(鉋)](https://github.com/tid-kijyun/Kanna) is a great XML/HTML parser for Mac OS X and iOS. (Created by [@tid-kijyun](https://github.com/tid-kijyun))
 - [CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift) is a greate Crypto related functions and helpers for Swift. (Created by [@krzyzanowskim](https://github.com/krzyzanowskim))
 
 ## Requirements
 
-- Xcode 8.0 or greater
+- Xcode 9 or greater
 - iOS 8.0 or greater
-- [Kanna(鉋)](https://github.com/tid-kijyun/Kanna)
 - UIKit
 - CoreData
 - CoreGraphics
