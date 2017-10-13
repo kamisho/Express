@@ -9,6 +9,7 @@ target 'newsURL' do
     pod 'MisterFusion'
   # Pods for newsURL
     pod 'Firebase/Core'
+    pod 'Cosmos', '~> 12.0'
 
   target 'newsURLTests' do
     inherit! :search_paths

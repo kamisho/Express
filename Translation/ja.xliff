@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="newsURL/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body/>
+  </file>
+  <file original="newsURL/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="2MP-f5-oG2.text">
+        <source>What do you think?</source>
+        <target>What do you think?</target>
+        <note>Class = "UILabel"; text = "What do you think?"; ObjectID = "2MP-f5-oG2";</note>
+      </trans-unit>
+      <trans-unit id="2ib-qz-R9s.text">
+        <source>URL</source>
+        <target>URL</target>
+        <note>Class = "UILabel"; text = "URL"; ObjectID = "2ib-qz-R9s";</note>
+      </trans-unit>
+      <trans-unit id="Ft0-Gx-cat.title">
+        <source>キャンセル</source>
+        <target>キャンセル</target>
+        <note>Class = "UIBarButtonItem"; title = "キャンセル"; ObjectID = "Ft0-Gx-cat";</note>
+      </trans-unit>
+      <trans-unit id="Nwg-ws-89l.normalTitle">
+        <source>ホームへ</source>
+        <target>ホームへ</target>
+        <note>Class = "UIButton"; normalTitle = "ホームへ"; ObjectID = "Nwg-ws-89l";</note>
+      </trans-unit>
+      <trans-unit id="VS8-UY-XoY.normalTitle">
+        <source>投稿する</source>
+        <target>投稿する</target>
+        <note>Class = "UIButton"; normalTitle = "投稿する"; ObjectID = "VS8-UY-XoY";</note>
+      </trans-unit>
+      <trans-unit id="WJc-kR-mYw.normalTitle">
+        <source>ホームへ</source>
+        <target>ホームへ</target>
+        <note>Class = "UIButton"; normalTitle = "ホームへ"; ObjectID = "WJc-kR-mYw";</note>
+      </trans-unit>
+      <trans-unit id="gQs-cs-lGf.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "gQs-cs-lGf";</note>
+      </trans-unit>
+      <trans-unit id="i4O-75-Um8.text">
+        <source>タイトル</source>
+        <target>タイトル</target>
+        <note>Class = "UILabel"; text = "タイトル"; ObjectID = "i4O-75-Um8";</note>
+      </trans-unit>
+      <trans-unit id="js5-vg-2vd.text">
+        <source>title</source>
+        <target>title</target>
+        <note>Class = "UILabel"; text = "title"; ObjectID = "js5-vg-2vd";</note>
+      </trans-unit>
+      <trans-unit id="qlq-Xc-7Pr.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "qlq-Xc-7Pr";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="newsURL/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Express</source>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>Express</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="newsURLTests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="newsURLUITests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

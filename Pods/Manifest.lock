@@ -1,4 +1,5 @@
 PODS:
+  - Cosmos (12.0.1)
   - Firebase/Core (4.3.0):
     - FirebaseAnalytics (= 4.0.4)
     - FirebaseCore (= 4.0.8)
@@ -14,7 +15,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/NSData+zlib (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - MisterFusion (3.0.0)
+  - MisterFusion (3.1.1)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -23,20 +24,22 @@ PODS:
   - URLEmbeddedView (0.12.0)
 
 DEPENDENCIES:
+  - Cosmos (~> 12.0)
   - Firebase/Core
   - MisterFusion
   - URLEmbeddedView
 
 SPEC CHECKSUMS:
+  Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
   Firebase: 83283761a1ef6dc9846e03d08059f51421afbd65
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseCore: 69b1a5ac5f857ba6d5fd9d5fe794f4786dd5e579
   FirebaseInstanceID: 70c2b877e9338971b2429ea5a4293df6961aa44e
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  MisterFusion: fd53e97f219514fcab8bb82985fb1aefade337da
+  MisterFusion: 9913b1c26f20d664f5abec15f16df02130f2f0a3
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   URLEmbeddedView: d8ae39c7257883c605871bf20043708913d55e53
 
-PODFILE CHECKSUM: 61e2581ef30872bf750a7a50464d8c2371454a24
+PODFILE CHECKSUM: a05db4c9909a10d72f6f16c365a3fa4a3683958c
 
 COCOAPODS: 1.2.1

@@ -144,7 +144,7 @@ class DetailViewController: UIViewController {
         myTextView.inputAccessoryView = kbToolBar
     }
     
-    func commitButtonTapped (){
+    @objc func commitButtonTapped (){
         self.view.endEditing(true)
     }
 
