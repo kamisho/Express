@@ -54,6 +54,7 @@
 		8104C67F63F1FD75352E7490 /* Pods_newsURL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsURL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		920C93DC1F7D0A0800488D7D /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataClass.swift"; path = "../Task+CoreDataClass.swift"; sourceTree = "<group>"; };
 		920C93DD1F7D0A0800488D7D /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataProperties.swift"; path = "../Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		921E5ED41FC3BB84008C72BE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		92345B701F8B7709001E8390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9296373F1F83E4C600B531A5 /* UraListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UraListViewController.swift; sourceTree = "<group>"; };
 		92B2662F1F76DBE400F6DBC4 /* newsURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +182,7 @@
 		A18E4A1DBAEB69FE1012BADE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				921E5ED41FC3BB84008C72BE /* JavaScriptCore.framework */,
 				92D27B551F82AD6100CEF3EC /* MisterFusion.framework */,
 				92D27B531F82ACEC00CEF3EC /* URLEmbeddedView.framework */,
 				8104C67F63F1FD75352E7490 /* Pods_newsURL.framework */,
@@ -281,7 +283,7 @@
 					92B2662E1F76DBE400F6DBC4 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4KBU5232V3;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					92B266451F76DBE400F6DBC4 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -665,20 +667,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KBU5232V3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MisterFusion",
 				);
 				INFOPLIST_FILE = newsURL/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.express;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f1ad551d-7cd5-497d-90b4-945d015a7817";
-				PROVISIONING_PROFILE_SPECIFIER = Express;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -688,20 +692,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KBU5232V3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MisterFusion",
 				);
 				INFOPLIST_FILE = newsURL/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamisho0528.express;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f1ad551d-7cd5-497d-90b4-945d015a7817";
-				PROVISIONING_PROFILE_SPECIFIER = Express;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

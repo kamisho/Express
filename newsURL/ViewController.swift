@@ -1,11 +1,12 @@
 import UIKit
 import CoreData
+import GoogleMobileAds
 
 class ViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet var taskTableView: UITableView!
     @IBOutlet var appSubtitle: UILabel!
-    
+    var bannerView : GADBannerView!
     
     var txt1 : String?
     var selectedIndex = 0
@@ -13,6 +14,27 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     var saveDates : [Date] = []
     var tasksToShow:[String:[String]] = ["投稿記事":[]]
     var taskCategories:[String] = ["投稿記事"]
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
     
     // taskCategories[]に格納されている文字列がTableViewのセクションになる
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,6 +78,15 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         taskTableView.dataSource = self
         taskTableView.delegate = self
+//        bannerView.delegate = self as! GADBannerViewDelegate
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        
+        addBannerViewToView(bannerView)
+        
+        bannerView.adUnitID = "ca-app-pub-8344544670768968/1369248261"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         
     }
     

@@ -9,8 +9,6 @@
 import Foundation
 
 public final class AttributeManager {
-    
-    
     public enum Style {
         case title, description, domain, noDataTitle
         
