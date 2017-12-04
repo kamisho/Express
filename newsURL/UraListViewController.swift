@@ -14,8 +14,8 @@ import CoreData
 class UraListViewController: UIViewController {
     
     var tasks:[Task] = []
-    var tasksToShow:[String:[String]] = ["投稿した記事":[]]
-    var taskCategories:[String] = ["投稿した記事"]
+    var tasksToShow:[String:[String]] = ["投稿記事":[]]
+    var taskCategories:[String] = ["投稿記事"]
     
     var text1:[String] = []
     var text2:[String] = []
